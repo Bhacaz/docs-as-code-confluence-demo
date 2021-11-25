@@ -16,8 +16,8 @@ jobs:
         uses: Bhacaz/docs-as-code-confluence@main
         with:
           folder: docs
-          username: jfbastien@petalmd.com
+          username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
-          confluence-base-url: https://petalmd.atlassian.net/wiki
-          space-id: ~661332374
-          parent-page-id: 1028915542
+          confluence-base-url: ${{ secrets.CONFLUENCE_BASE_URL }}
+          space-id: ${{ secrets.SPACE_ID }}
+          parent-page-id: ${{ secrets.PARENT_PAGE_ID }}
