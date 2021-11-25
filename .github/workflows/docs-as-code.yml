@@ -1,0 +1,23 @@
+name: Sync Docs as Code - Confluence
+on:
+  push:
+    branches:
+        - main
+    paths:
+      - 'docs/**'
+jobs:
+  docs-as-code:
+    runs-on: ubuntu-latest
+    name: Sync Docs as Code - Confluence
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Sync Docs as Code - Confluence
+        uses: Bhacaz/docs-as-code-confluence@main
+        with:
+          folder: docs
+          username: ${{ secrets.username }}
+          password: ${{ secrets.password }}
+          confluence-base-url: ${{ secrets.confluence-base-url }}
+          space-id: ${{ secrets.space-id }}
+          parent-page-id: ${{ secrets.parent-page-id }}
