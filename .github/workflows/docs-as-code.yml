@@ -16,8 +16,8 @@ jobs:
         uses: Bhacaz/docs-as-code-confluence@main
         with:
           folder: docs
-          username: ${{ secrets.username }}
-          password: ${{ secrets.password }}
-          confluence-base-url: ${{ secrets.confluence_base_url }}
-          space-id: ${{ secrets.space_id }}
-          parent-page-id: ${{ secrets.parent_page_id }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          confluence-base-url: ${{ secrets.CONFLUENCE_BASE_URL }}
+          space-id: ${{ secrets.SPACE_ID }}
+          parent-page-id: ${{ secrets.PARENT_PAGE_ID }}
