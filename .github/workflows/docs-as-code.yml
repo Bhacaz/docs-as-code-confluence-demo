@@ -18,6 +18,6 @@ jobs:
           folder: docs
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
-          confluence-base-url: ${{ secrets.confluence-base-url }}
-          space-id: ${{ secrets.space-id }}
-          parent-page-id: ${{ secrets.parent-page-id }}
+          confluence-base-url: ${{ secrets.confluence_base_url }}
+          space-id: ${{ secrets.space_id }}
+          parent-page-id: ${{ secrets.parent_page_id }}
