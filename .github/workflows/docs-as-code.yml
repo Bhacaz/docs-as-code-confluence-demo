@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Sync Docs as Code - Confluence
-        uses: Bhacaz/docs-as-code-confluence@main
+        uses: Bhacaz/docs-as-code-confluence@update_node
         with:
           folder: docs
           username: ${{ secrets.USERNAME }}
