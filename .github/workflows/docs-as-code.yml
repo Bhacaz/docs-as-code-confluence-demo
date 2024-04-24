@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: docs
       - name: Sync Docs as Code - Confluence
         uses: Bhacaz/docs-as-code-confluence@udpate_node
         with:
