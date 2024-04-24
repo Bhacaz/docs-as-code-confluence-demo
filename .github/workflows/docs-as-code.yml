@@ -19,5 +19,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           confluence-base-url: ${{ secrets.CONFLUENCE_BASE_URL }}
-          space-id: ${{ secrets.SPACE_ID }}
+          space-key: ${{ secrets.SPACE_ID }}
           parent-page-id: ${{ secrets.PARENT_PAGE_ID }}
